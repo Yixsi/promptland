@@ -1,4 +1,6 @@
-import '@styles/globals.css'
+import '@styles/globals.css';
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 export const metadata = {
     title: 'Promptland',
@@ -14,6 +16,7 @@ export default function RootLayout({ children }) {
             </div>
 
             <div className="app">
+                <Nav />
                 {children}
             </div>
         </body>
